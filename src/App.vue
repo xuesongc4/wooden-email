@@ -10,7 +10,10 @@
         </h1>
         <h2> selected : {{selected}}</h2>
         <div style="display: flex">
-            <div style="width: 50%">{{emailMarkUp}}</div>
+            <div style="width: 50%">
+                <textarea style="margin: 50px" name="" id="" cols="30" rows="10" v-model="emailMarkUp">
+                </textarea>
+            </div>
             <div style="width: 50%" v-html="emailMarkUp"></div>
         </div>
     </div>
